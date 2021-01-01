@@ -1,0 +1,1032 @@
+/*============================================================
+Theme Name: Hyundai
+Version: 1.0.0
+=========================================================*/
+
+
+/*=======================================================
+TABLE OF CONTENTS:
+
+0.1  Fonts
+0.2  Reset Style
+0.3  Header-style
+0.4  Footer-style
+
+=========================
+ 1.0 Home
+=========================
+1.1  Home Slider
+1.2  Home Cars
+
+=========================
+ 2.0 About Us
+=========================
+
+=========================
+ 3.0 Showroom
+=========================
+
+=========================
+4.0 News And Promotion
+=========================
+
+=========================
+5.0 Contact
+=========================
+
+=========================
+6.0 Price
+=========================
+
+=========================
+7.0 Car
+=========================
+
+=========================================================*/
+
+
+/*==========================================
+#0.1   Fonts
+=============================================*/
+
+
+/* HyundaiSans */
+
+@font-face {
+    font-family: 'hyundai_sans_head_krbold';
+    src: url('~@/assets/fonts/hyundaisansheadkrbold-webfont.woff2') format('woff2'), url('~@/assets/fonts/hyundaisansheadkrbold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hyundai_sans_head_krlight';
+    src: url('~@/assets/fonts/hyundaisansheadkrlight-webfont.woff2') format('woff2'), url('~@/assets/fonts/hyundaisansheadkrlight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hyundai_sans_head_krmedium';
+    src: url('~@/assets/fonts/hyundaisansheadkrmedium-webfont.woff2') format('woff2'), url('~@/assets/fonts/hyundaisansheadkrmedium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hyundai_sans_head_krregular';
+    src: url('~@/assets/fonts/hyundaisansheadkrregular-webfont.woff2') format('woff2'), url('~@/assets/fonts/hyundaisansheadkrregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hyundai_sans_text_krbold';
+    src: url('~@/assets/fonts/hyundaisanstextkrbold-webfont.woff2') format('woff2'), url('~@/assets/fonts/hyundaisanstextkrbold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hyundai_sans_text_krmedium';
+    src: url('~@/assets/fonts/hyundaisanstextkrmedium-webfont.woff2') format('woff2'), url('~@/assets/fonts/hyundaisanstextkrmedium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hyundai_sans_text_krregular';
+    src: url('~@/assets/fonts/hyundaisanstextkrregular-webfont.woff2') format('woff2'), url('~@/assets/fonts/hyundaisanstextkrregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Eg.. */
+
+
+/* font-family: 'hyundai_sans_text_krregular', sans-serif; */
+
+
+/*==========================================
+#0.1   Reset Style
+=============================================*/
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0px;
+    font-family: 'hyundai_sans_text_krregular', sans-serif;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.container-total-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/*==========================================
+#0.3   Header Style
+=============================================*/
+
+.nav-bar-container {
+    position: relative;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+
+.nav-text {
+    /* HyundaiSansHeadKRRegular,AdobeInvisFont,MyriadPro-Regular */
+}
+
+.logo-vertical {
+    width: 152px;
+    height: 22px;
+}
+
+.budget {
+    background-color: #002C5E;
+    color: #ffffff;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-family: 'hyundai_sans_text_krregular';
+}
+
+.nav-item {
+    padding-left: 11px;
+    padding-right: 11px;
+    font-size: 13px;
+    color: #5D5D5D;
+    font-family: 'hyundai_sans_text_krregular';
+    /* display: flex;
+    align-items: center; */
+}
+
+@media (min-width: 992px) {
+    .nav-item {
+        display: flex;
+        align-items: center;
+    }
+    .dropdown-item {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.dropdown-item {
+    padding-left: 11px;
+    padding-right: 11px;
+    font-size: 13px;
+    color: #5D5D5D;
+    font-family: 'hyundai_sans_text_krregular';
+    /* display: flex;
+  align-items: center; */
+}
+
+.boder-right-nav-hyundai {
+    border-right: 1px solid #58595b;
+}
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        align-items: center;
+    }
+}
+
+@media (min-width: 1000.98px) {
+    .divider-vertical {
+        width: 1px;
+        height: 13px;
+        background-color: #0d56a2;
+    }
+}
+
+.navbar-light .navbar-toggler {
+    color: transparent;
+    border-color: transparent;
+}
+
+.contact-center {
+    height: 23px;
+    width: 150px;
+}
+
+
+/*==========================================
+#0.4   Footer Style
+=============================================*/
+
+.footer-hyundai {
+    background-color: #1C1B1B;
+    color: #ffffff;
+    flex-shrink: 0;
+    /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+    ;
+}
+
+@media (max-width: 991.98px) {
+    .menu-footer {
+        display: none !important;
+    }
+}
+
+.footer-hyundai .nav-link {
+    color: #ffffff;
+}
+
+.footer-hyundai .nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer-hyundai .divider-vertical {
+    background-color: #ffffff;
+}
+
+.footer-hyundai .footer-number {
+    color: #A9A9A9;
+    font-size: 13px;
+}
+
+.footer-hyundai .icon-networks {
+    max-height: 18px;
+    margin-left: 5px;
+}
+
+.footer-hyundai .copyright {
+    font-size: 13px !important;
+    padding-left: 20px;
+}
+
+
+/*==========================================
+#1   Home
+=============================================*/
+
+
+/* #1.1 Home Slider */
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+
+.carousel-indicators li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    margin-right: 3px;
+    margin-left: 5px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 3px solid #ffffff;
+    opacity: .5;
+    transition: opacity 0.6s ease;
+}
+
+.carousel-indicators .active {
+    background-color: #ffffff;
+}
+
+button:focus {
+    outline: 1px dotted;
+    outline: none;
+}
+
+
+/* #1.2  Home Cars */
+
+.home-cars .nav {
+    background-color: #003366;
+    justify-content: center;
+}
+
+.home-cars .nav li .nav-link {
+    font-family: 'hyundai_sans_text_krregular', sans-serif;
+    color: #ffffff;
+}
+
+.home-cars .car-title {
+    color: #002C5E;
+    text-align: center;
+}
+
+.home-cars .see-more {
+    width: 182px;
+    height: 52px;
+    background-color: #002C5E;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+
+.mt--15{
+    margin-top: -15px !important;
+}
+
+
+/* =========================
+ 2.0 About Us
+========================= */
+
+.about-us {}
+
+.about-us .title {
+    font-family: 'hyundai_sans_head_krmedium', sans-serif;
+    margin-top: 72px;
+    text-align: center;
+    font-size: 63px;
+    color: #000000;
+}
+
+.about-us .subtitle {
+    font-family: 'hyundai_sans_head_krmedium', sans-serif;
+    margin-top: 11px;
+    text-align: center;
+    font-size: 34px;
+    color: #000000;
+}
+
+.about-us .textbox {
+    margin-top: 45px;
+}
+
+.about-us .textbox .titletextbox {
+    font-family: 'hyundai_sans_head_krmedium';
+    font-size: 34px;
+    color: #000000;
+    margin-bottom: 13px;
+}
+
+.about-us .textbox p {
+    font-family: 'hyundai_sans_head_krlight';
+    font-size: 18px;
+    margin: 0;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #ffffff;
+    opacity: 0.2;
+}
+
+
+/* slide inside about */
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #ffffff;
+}
+
+.about-us .img-absolute {}
+
+.about-us .text-img {
+    z-index: 11;
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+
+.about-us .box-slide-text {}
+
+.about-us .box-slide-title {
+    font-family: 'hyundai_sans_head_krmedium', sans-serif;
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.about-us .box-slide-long-text {
+    font-family: 'hyundai_sans_head_krlight', sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    max-width: 607px;
+    line-height: 24px;
+}
+
+@media (max-width: 991.98px) {
+    .about-us .box-slide-title {
+        font-size: 20px;
+    }
+    .about-us .box-slide-long-text {
+        font-size: 14px;
+        line-height: 14px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .about-us .box-slide-long-text {
+        font-size: 10px;
+        line-height: 10px;
+    }
+}
+
+
+/* =========================
+5.0 Contact
+========================= */
+
+.contact {}
+
+.contact .form-control {
+    border-top: none;
+    border-left: none;
+    border-radius: 0px;
+    border-color: #002C5E;
+    color: #002C5E;
+}
+
+.contact ::placeholder {
+    color: #002C5E;
+    opacity: 1;
+    /* Firefox */
+}
+
+.form-control:focus {
+    border-color: #cccccc;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.contact .title {
+    font-family: 'hyundai_sans_head_krmedium', sans-serif;
+    margin-top: 72px;
+    font-size: 63px;
+    color: #000000;
+}
+
+.contact button {
+    background-color: #082E60;
+    border-radius: 0px;
+    border: none;
+}
+
+.contact button:hover {
+    background-color: #cccccc;
+    border-radius: 0px;
+    border: none;
+}
+
+.form-contact {
+    margin-top: 36px;
+}
+
+
+/* =========================
+6.0 Price
+========================= */
+
+.price {}
+
+.price .title {
+    font-family: 'hyundai_sans_head_krmedium', sans-serif;
+    margin-top: 72px;
+    text-align: center;
+    font-size: 63px;
+    color: #000000;
+}
+
+.form-price {
+    margin-top: 36px;
+}
+
+.price .form-control {
+    border-top: none;
+    border-left: none;
+    border-radius: 0px;
+    border-color: #002C5E;
+    color: #002C5E;
+}
+
+.price ::placeholder {
+    color: #002C5E;
+    opacity: 1;
+    /* Firefox */
+}
+
+.form-control:focus {
+    border-color: #cccccc;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.price button {
+    background-color: #082E60;
+    border-radius: 0px;
+    border: none;
+}
+
+.price button:hover {
+    background-color: #cccccc;
+    border-radius: 0px;
+    border: none;
+}
+
+
+/* =========================
+7.0 Car
+========================= */
+
+.car {}
+
+.car .cover {}
+
+.car .nav-car {
+    margin-top: 37px;
+    color: #002C5E;
+}
+
+.car .nav-car .nav-link {
+    color: #002C5E;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
+
+.car .nav-car ul li:last-child .nav-link {
+    background-color: #002C5E;
+    color: #ffffff;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-family: 'hyundai_sans_text_krregular';
+}
+
+.car .title {
+    font-family: 'hyundai_sans_head_krmedium', sans-serif;
+    margin-top: 32px;
+    text-align: center;
+    font-size: 81px;
+    color: #000000;
+}
+
+.car .subtitle {
+    font-family: 'hyundai_sans_head_krmedium', sans-serif;
+    margin-top: 24px;
+    text-align: center;
+    font-size: 40px;
+    color: #000000;
+}
+
+@media (max-width: 575.98px) {
+    .car .title {
+        font-size: 30px;
+    }
+    .car .subtitle {
+        font-size: 23px;
+    }
+}
+
+.car .longtext {
+    font-family: 'hyundai_sans_head_krlight', sans-serif;
+    margin-top: 30px;
+    color: #000000;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.car .main-image {
+    margin-top: 74px;
+}
+
+.car .block-description-box {
+    margin-top: 19px;
+    margin-bottom: 49px;
+    max-width: 574px;
+}
+
+.car .box-img-text-first-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.car .box-img-text-second-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.car .title-block {
+    font-family: 'hyundai_sans_head_krmedium', sans-serif;
+    font-size: 40px;
+}
+
+.car .text-block {
+    font-family: 'hyundai_sans_head_krlight', sans-serif;
+    font-size: 23px;
+    line-height: 23px;
+}
+
+.car .cream-color-zone {
+    background-color: #E4DBD2;
+}
+
+.car .cream-color-zone .subtitle {
+    margin-top: 79px;
+    font-family: 'hyundai_sans_head_krmedium', sans-serif;
+    font-size: 40px;
+}
+
+.car .cream-color-zone .longtextcream {
+    margin-top: 23px;
+    font-family: 'hyundai_sans_head_krlight', sans-serif;
+    font-size: 23px;
+    line-height: 23px;
+    text-align: center;
+}
+
+.car .cream-color-zone .cream-blocks {
+    margin-top: 53px;
+}
+
+.car .cream-block-description-box {
+    margin-top: 24px;
+}
+
+.car .cream-block-description-box .cream-title {
+    font-family: 'hyundai_sans_head_krmedium', sans-serif;
+    font-size: 40px;
+    color: #000000;
+}
+
+.car .cream-block-description-box .cream-longtext {
+    font-family: 'hyundai_sans_head_krlight', sans-serif;
+    font-size: 23px;
+    line-height: 23px;
+    color: #000000;
+}
+
+.car .galery-zone .title {
+    font-family: 'hyundai_sans_head_krmedium', sans-serif;
+    font-size: 81px;
+    color: #000000;
+    text-align: center;
+}
+
+
+/* Car Motorization */
+
+.car .motorization .motorization-firsttwoimages {
+    margin-top: 30px;
+}
+
+.car .motorization .motorization-cream-zone {
+    background-color: #E4DBD2;
+}
+
+.car .motorization .motorization-cream-zone .title {
+    font-family: 'hyundai_sans_head_krmedium', sans-serif;
+    color: #000000;
+    font-size: 40px;
+}
+
+.car .motorization .motorization-cream-zone .subtitle {
+    font-family: 'hyundai_sans_head_krlight', sans-serif;
+    color: #000000;
+    font-size: 23px;
+}
+
+.car .motorization .motorization-cream-zone .cream-image {
+    margin-top: 223px;
+}
+
+.car .motorization-last {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.car .motorization-last .title-moto-last {
+    margin-top: 27px;
+    font-family: 'hyundai_sans_head_krmedium', sans-serif;
+    font-size: 40.3px;
+    line-height: 50px;
+}
+
+.car .motorization-last .subtitle-moto-last {
+    margin-top: 18px;
+    font-family: 'hyundai_sans_head_krlight', sans-serif;
+    font-size: 23px;
+    line-height: 24px;
+}
+
+.car .logo-download {
+    max-height: 30px;
+}
+
+.car .download-link {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.car .download-link a {
+    background-color: #002C5E;
+    color: #ffffff;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-family: 'hyundai_sans_text_krregular';
+    display: flex;
+    justify-content: center;
+    max-width: 240px;
+}
+
+
+/* =========================
+7.0 Spares
+========================= */
+
+.spares .title {
+    font-family: 'hyundai_sans_head_krmedium', sans-serif;
+    font-size: 81px;
+    color: #000000;
+    text-align: center;
+    margin-top: 71px;
+}
+
+.spares .subtitle {
+    font-family: 'hyundai_sans_head_krmedium', sans-serif;
+    font-size: 34px;
+    color: #000000;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.spares .stair1 {
+    background-color: #E4DBD2;
+    min-height: 183px;
+    margin-top: 24px;
+}
+
+.spares .stair2 {
+    background-color: #ECE6DF;
+    min-height: 183px;
+}
+
+.spares .stair3 {
+    background-color: #F1EDE8;
+    min-height: 183px;
+}
+
+.spares .stair4 {
+    background-color: #F7F4F1;
+    min-height: 183px;
+}
+
+.spares .last-stair {
+    font-size: 25px;
+    text-align: center;
+    min-height: 183px;
+    font-family: 'hyundai_sans_head_krmedium', sans-serif;
+    color: #000000;
+}
+
+.spares .title-stair {
+    font-size: 20px;
+    font-family: 'hyundai_sans_head_krmedium', sans-serif;
+    color: #000000;
+}
+
+
+/* =========================
+8.0 Services
+========================= */
+
+.service .title {
+    font-family: 'hyundai_sans_head_krmedium', sans-serif;
+    font-size: 81px;
+    color: #000000;
+    text-align: center;
+    margin-top: 71px;
+}
+
+.service .subtitle {
+    font-family: 'hyundai_sans_head_krmedium', sans-serif;
+    font-size: 34px;
+    color: #000000;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.service .service-bg-image {
+    margin-top: 18px;
+    min-height: 431px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.service .text {
+    color: #ffffff;
+}
+
+.service .title-white {
+    color: #ffffff;
+    font-size: 40px;
+    font-family: 'hyundai_sans_head_krmedium', sans-serif;
+}
+
+.service .cream-zone {
+    background-color: #E4DBD2;
+    padding-top: 37px;
+    padding-bottom: 37px;
+}
+
+.service .cream-zone .title-cream {
+    font-size: 37px;
+    color: #000000;
+    text-align: center;
+    font-family: 'hyundai_sans_head_krmedium', sans-serif;
+}
+
+.service .subtitle-cream {
+    font-family: 'hyundai_sans_head_krmedium', sans-serif;
+    color: #000000;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.service .cream-zone p,
+.service .cream-zone li {
+    font-family: 'hyundai_sans_head_krlight', sans-serif;
+    color: #000000;
+    font-size: 20px;
+}
+
+
+/*==========================================
+#9.0   Footer Style
+=============================================*/
+
+.zones .title {
+    font-size: 37px;
+    color: #000000;
+    text-align: center;
+    font-family: 'hyundai_sans_head_krmedium', sans-serif;
+}
+
+.zones .zone-place {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'hyundai_sans_head_krregular';
+}
+
+.zone-title {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.zones .divider-horizontal {
+    width: 120px;
+    height: 1px;
+    background-color: #0d56a2;
+}
+
+.zones .zones-blue-bg {
+    background-color: #002C5E;
+    color: #ffffff;
+}
+
+.zones .map-icon {
+    height: 24px;
+    width: 31px;
+}
+
+.zones .zone-vertical-divider {
+    width: 2px;
+    height: 300px;
+    background-color: #ffffff;
+    margin-right: 30px;
+    margin-left: 40px;
+}
+
+@media (max-width: 991.98px) {
+    .zones .zone-vertical-divider {
+        display: none;
+    }
+}
+
+.zones .zone-col {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+/*==========================================
+#10   Gallery
+=============================================*/
+
+.responsive-heigh-gallery {
+    height: 800px;
+}
+
+@media (max-width: 991.98px) {
+    .responsive-heigh-gallery {
+        height: 600px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .responsive-heigh-gallery {
+        height: 500px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .responsive-heigh-gallery {
+        height: 300px;
+    }
+}
+
+
+/*==========================================
+#11   Promotions
+=============================================*/
+
+.promotions .title {
+    margin-top: 44px;
+    font-size: 81px;
+    color: #000000;
+    text-align: center;
+    font-family: 'hyundai_sans_head_krmedium', sans-serif;
+}
+
+@media (max-width: 575.98px) {
+    .promotions .title {
+        margin-top: 44px;
+        font-size: 30px;
+        color: #000000;
+        text-align: center;
+        font-family: 'hyundai_sans_head_krmedium', sans-serif;
+    }
+}
+.img-whatsapp {
+    max-height: 50px!important;
+}
+
+/*==========================================
+#12   Talleres
+=============================================*/
+
+.galleres {}
